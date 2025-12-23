@@ -112,12 +112,6 @@ http://localhost:3001
 
 ---
 
-## 👩‍💻 Author
-**Sreemayi Billa**  
-GitHub: https://github.com/sreemayi-25
-
----
-
 ## ⭐ Acknowledgements
 - CoinGecko for providing free cryptocurrency market data
 - React and Express open-source communities
