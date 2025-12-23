@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# CryptoX 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack cryptocurrency tracking web application built using **React** and **Node.js (Express)** that displays real-time crypto prices, trending coins, and historical price charts using the **CoinGecko API**, with backend caching to handle API rate limits.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔥 Features
+- 📈 Live cryptocurrency prices
+- 🌟 Trending cryptocurrencies
+- 📊 Interactive historical price charts
+- 🔍 Individual coin detail pages
+- ⚡ Backend caching to prevent CoinGecko rate-limit issues
+- 🌐 Clean and responsive UI using Material UI
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Frontend
+- React.js
+- Material UI
+- Axios
+- Chart.js
+- Context API
 
-### `npm test`
+### Backend
+- Node.js
+- Express.js
+- Axios
+- CORS
+- In-memory caching
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### API
+- CoinGecko Public API
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Project Structure
+```
+cryptox/
+├── backend/
+│   ├── server.js
+│   └── package.json
+│
+├── public/
+│   └── banner2.jpg
+│
+├── src/
+│   ├── Components/
+│   ├── Pages/
+│   ├── config/
+│   ├── CryptoContext.js
+│   ├── App.js
+│   └── index.js
+│
+├── .gitignore
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Getting Started
 
-### `npm run eject`
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔹 Backend Setup
+```
+cd backend
+npm install
+node server.js
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Backend runs on:
+```
+http://localhost:5050
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### 🔹 Frontend Setup
+```
+cd ..
+npm install
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Frontend runs on:
+```
+http://localhost:3001
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ⚠️ Important Notes
+- CoinGecko free API is **rate-limited**
+- Backend caching is implemented to avoid repeated API calls
+- Refresh the application **only once** during development to prevent 429 errors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📌 Future Enhancements
+- 🔐 User authentication
+- ⭐ Watchlist / favorites
+- 🌙 Dark mode toggle
+- 📱 Mobile-first UI improvements
+- ☁️ Deployment using Vercel & Render
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 👩‍💻 Author
+**Sreemayi Billa**  
+GitHub: https://github.com/sreemayi-25
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ⭐ Acknowledgements
+- CoinGecko for providing free cryptocurrency market data
+- React and Express open-source communities
